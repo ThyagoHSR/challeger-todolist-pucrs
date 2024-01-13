@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { useState } from 'react';
 import { Container, Link, List, OptionList, Text, Title, UserIcon } from "./styles";
 
 export default function Aside() {
