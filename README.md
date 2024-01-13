@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Desafio da 2 fase da Aceleradora Ágil para criar um To-Do List.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação To-Do List que permite ao usuário adicionar, remover e marcar tarefas como concluídas para dois períodos distintos: "Dia" e "Noite".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+1. **Adicionar Tarefas**: O usuário pode adicionar tarefas para o período do "Dia" e "Noite" através de campos de entrada.
+2. **Remover Tarefas**: Cada tarefa pode ser removida da lista correspondente.
+3. **Marcar como Concluída**: As tarefas podem ser marcadas como concluídas, exibindo um ícone indicativo ao lado da tarefa.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- styled-components
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Estrutura do Projeto
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+O projeto é composto por um componente `Tasks` que utiliza styled-components para estilização. A aplicação é dividida em dois segmentos principais: "Dia" e "Noite", cada um com sua própria lista de tarefas.
+
+## Como Executar
+
+1. Clone o repositório para sua máquina local.
+2. Navegue até o diretório do projeto.
+3. Instale as dependências usando `npm install`.
+4. Execute o projeto usando `npm run dev`.
+
+## Notas Adicionais
+
+- Este projeto é um exemplo básico de uma lista de tarefas.
+- Pode ser estendido e personalizado para adicionar mais funcionalidades e estilos conforme necessário.
