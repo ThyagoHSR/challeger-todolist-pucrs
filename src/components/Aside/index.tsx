@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { useState } from 'react';
-import { Container, Link, List, OptionList, Text, Title, UserIcon } from "./styles";
+import { Container, Link, List, OptionList, Text, Title,} from "./styles";
+import UserIcon from '../UserIcon';
 
 export default function Aside() {
     const [editableTitle, setEditableTitle] = useState('Clique para alterar o nome');
@@ -10,7 +11,7 @@ export default function Aside() {
 
     return (
         <Container>
-            <UserIcon>TH</UserIcon>
+            <UserIcon/>
             <Title
                 contentEditable={true} 
                 suppressContentEditableWarning={true} 

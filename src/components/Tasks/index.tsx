@@ -81,10 +81,11 @@ export default function Tasks() {
                 <TaskTitle
                   key={index}
                   completed={isTaskCompleted('day', index)}
-                  onClick={() => markTaskCompleted('day', index)}
                 >
                   {task}
+                  <span onClick={() => markTaskCompleted('day', index)}> 
                   <img src={imageCompleted} alt="Completed Icon" />
+                  </span>
                   <span onClick={() => removeTask('day', index)}>
                     <img src={imageRemove} alt="Remove Icon" />
                   </span>
@@ -111,10 +112,12 @@ export default function Tasks() {
                 <TaskTitle
                   key={index}
                   completed={isTaskCompleted('night', index)}
-                  onClick={() => markTaskCompleted('night', index)}
+                  
                 >
                   {task}
+                  <span onClick={() => markTaskCompleted('night', index)}> 
                   <img src={imageCompleted} alt="Completed Icon" />
+                  </span>
                   <span onClick={() => removeTask('night', index)}>
                     <img src={imageRemove} alt="Remove Icon" />
                   </span>

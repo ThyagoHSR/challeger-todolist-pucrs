@@ -20,20 +20,6 @@ export const Container = styled.aside`
     }
 `
 
-export const UserIcon = styled.div`
-    background-color: #5865f2;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5rem;
-    color: #fff;
-    text-transform: uppercase;
-`
-
 export const Title = styled.h1`
     font-size: 1rem;
     font-weight: bold;
